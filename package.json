@@ -1,16 +1,16 @@
 {
   "name": "nodebasico",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon index.js"
   },
   "devDependencies": {
-    "eslint": "^6.2.1",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
     "eslint-config-prettier": "latest",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import": "latest",
     "eslint-plugin-prettier": "latest",
     "nodemon": "latest",
     "prettier": "latest",
