@@ -7,11 +7,14 @@
     "dev": "nodemon index.js"
   },
   "devDependencies": {
-    "nodemon": "latest",
-    "eslint": "latest",
+    "eslint": "^6.2.1",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "latest",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "latest",
-    "prettier": "latest"
+    "nodemon": "latest",
+    "prettier": "latest",
+    "sucrase": "latest"
   },
   "dependencies": {
     "axios": "latest",
