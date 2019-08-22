@@ -1,10 +1,9 @@
 {
   "name": "nodebasico",
-  "version": "1.0.2",
-  "main": "index.js",
+  "version": "1.0.3",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon ./src/server.js"
   },
   "devDependencies": {
     "eslint": "latest",
@@ -14,11 +13,18 @@
     "eslint-plugin-prettier": "latest",
     "nodemon": "latest",
     "prettier": "latest",
-    "sucrase": "latest"
+    "sucrase": "latest",
+    "sequelize-cli": "latest"
   },
   "dependencies": {
     "axios": "latest",
+    "bcryptjs": "latest",
     "cors": "latest",
-    "express": "latest"
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "pg": "latest",
+    "pg-hstore": "latest",
+    "sequelize": "latest",
+    "yup": "latest"
   }
 }
