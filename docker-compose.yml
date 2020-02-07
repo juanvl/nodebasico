@@ -1,0 +1,28 @@
+version: '2'
+services:
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
+  postgres:
+    image: "postgres:alpine"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=nodebasico
+
+  web:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "3333:3333"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      - postgres
+      - redis
+    entrypoint: ["sh", "/usr/src/app/docker-entrypoint.sh"]

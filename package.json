@@ -3,28 +3,52 @@
   "version": "1.0.3",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./src/server.js"
+    "dev": "nodemon ./src/server.js",
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test jest --forceExit",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all"
   },
   "devDependencies": {
+    "@sucrase/jest-plugin": "latest",
+    "@types/jest": "latest",
     "eslint": "latest",
     "eslint-config-airbnb-base": "latest",
     "eslint-config-prettier": "latest",
     "eslint-plugin-import": "latest",
+    "eslint-plugin-import-helpers": "latest",
     "eslint-plugin-prettier": "latest",
+    "factory-girl": "latest",
+    "faker": "latest",
+    "jest": "latest",
     "nodemon": "latest",
     "prettier": "latest",
     "sucrase": "latest",
-    "sequelize-cli": "latest"
+    "sequelize-cli": "latest",
+    "sqlite3": "latest",
+    "supertest": "latest"
   },
   "dependencies": {
+    "@sentry/node": "latest",
     "axios": "latest",
     "bcryptjs": "latest",
     "cors": "latest",
+    "date-fns": "latest",
+    "dotenv": "latest",
     "express": "latest",
+    "express-async-errors": "latest",
+    "express-brute": "latest",
+    "express-brute-redis": "latest",
+    "express-handlebars": "latest",
+    "express-rate-limit": "latest",
+    "helmet": "latest",
+    "ioredis": "latest",
     "jsonwebtoken": "latest",
     "pg": "latest",
     "pg-hstore": "latest",
+    "rate-limit-redis": "latest",
+    "redis": "latest",
     "sequelize": "latest",
+    "youch": "latest",
     "yup": "latest"
   }
 }
