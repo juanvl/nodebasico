@@ -1,6 +1,6 @@
 {
   "name": "nodebasico",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon ./src/server.js",
